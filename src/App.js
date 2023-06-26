@@ -39,11 +39,9 @@ function App() {
     const winner = checkWinner(updateBoard);
     if (winner) {
       if (winner === "O") {
-        let { oScore } = scores;
         scores.oScore += 1;
         setScores(scores);
       } else {
-        let { xScore } = scores;
         scores.xScore += 1;
         setScores(scores);
       }
